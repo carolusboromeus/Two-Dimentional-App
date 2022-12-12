@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="25dp"
+    android:background="@drawable/img"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login Menu (Firebase)"
+        android:fontFamily="sans-serif"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="15dp"
+        style="@style/TextAppearance.MaterialComponents.Headline5"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/tvDescription"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/tvTitle"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:text="Login to your existing account"
+        android:fontFamily="sans-serif"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        style="@style/TextAppearance.MaterialComponents.Caption"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/tvAuthor"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/tvDescription"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="75dp"
+        android:text="Created By : Kelompok 1"
+        android:fontFamily="sans-serif"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        style="@style/TextAppearance.MaterialComponents.Caption"
+        tools:ignore="HardcodedText" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvAuthor"
+        android:layout_marginBottom="25dp"
+        app:startIconDrawable="@drawable/ic_baseline_email_24">
+
+        <EditText
+            android:id="@+id/edEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:ignore="Autofill,HardcodedText,SpeakableTextPresentCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textInputEmail"
+        android:layout_marginBottom="40dp"
+        app:passwordToggleEnabled="true"
+        app:startIconDrawable="@drawable/ic_baseline_lock_24">
+
+        <EditText
+            android:id="@+id/edPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:ignore="Autofill,HardcodedText,SpeakableTextPresentCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textInputPassword"
+        android:layout_marginBottom="20dp"
+        android:text="Login"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/tvRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnLogin"
+        android:fontFamily="sans-serif"
+        android:text ="Don't have any account? Sign Up Here"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        style="@style/TextAppearance.MaterialComponents.Caption"
+        tools:ignore="HardcodedText" />
+
+</RelativeLayout>

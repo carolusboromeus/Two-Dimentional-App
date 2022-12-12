@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img"
+    android:padding="20dp"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".ProfileActivity">
+
+    <TextView
+        android:id="@+id/tvEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:fontFamily="sans-serif"
+        android:text=" Email "
+        android:textSize="24sp"
+        android:textStyle="bold"
+        style="@style/TextAppearance.MaterialComponents.Headline6"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tvEmail"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="sans-serif"
+        android:text="Program Menghitung Bangun Datar"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        style="@style/TextAppearance.MaterialComponents.Headline6"
+        tools:ignore="HardcodedText" />
+
+    <GridLayout
+        android:id="@+id/gridLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:layout_below="@+id/tvTitle"
+        android:rowCount="2"
+        android:columnCount="2">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvSquare"
+            app:cardBackgroundColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_marginTop="25dp"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_gravity="fill"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="5dp">
+
+            <RelativeLayout
+                android:id="@+id/squareMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal|center_vertical"
+                tools:ignore="UseCompoundDrawables">
+
+                <ImageView
+                    android:id="@+id/squareImg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="25dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/square"
+                    android:contentDescription="Volume dan Luas Persegi"
+                    tools:ignore="HardcodedText">
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/squareDesc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/squareImg"
+                    android:fontFamily="sans-serif"
+                    android:text="Square"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText">
+                </TextView>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvCircle"
+            app:cardBackgroundColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_marginTop="25dp"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_gravity="fill"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="5dp">
+
+            <RelativeLayout
+                android:id="@+id/circleMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal|center_vertical"
+                tools:ignore="UseCompoundDrawables">
+
+                <ImageView
+                    android:id="@+id/circleImg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="20dp"
+                    android:src="@drawable/circle"
+                    android:contentDescription="Volume dan Luas Lingkaran"
+                    tools:ignore="HardcodedText">
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/circleDesc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/circleImg"
+                    android:fontFamily="sans-serif"
+                    android:text="Circle"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText">
+                </TextView>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvTriangle"
+            app:cardBackgroundColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_gravity="fill"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="5dp">
+
+            <RelativeLayout
+                android:id="@+id/triangleMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal|center_vertical"
+                tools:ignore="UseCompoundDrawables">
+
+                <ImageView
+                    android:id="@+id/triangleImg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="20dp"
+                    android:src="@drawable/triangle"
+                    android:contentDescription="Menghitung Luas dan Keliling Segitiga"
+                    tools:ignore="HardcodedText">
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/triangleDesc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/triangleImg"
+                    android:fontFamily="sans-serif"
+                    android:text="Triangle"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText">
+                </TextView>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvRectangle"
+            app:cardBackgroundColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:layout_gravity="fill"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="5dp">
+
+            <RelativeLayout
+                android:id="@+id/rectangleMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal|center_vertical"
+                tools:ignore="UseCompoundDrawables">
+
+                <ImageView
+                    android:id="@+id/rectangleImg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/rectangle"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="10dp"
+                    android:contentDescription="Menghitung Luas dan Keliling Persegi Panjang"
+                    tools:ignore="HardcodedText">
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/rectangleDesc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rectangleImg"
+                    android:fontFamily="sans-serif"
+                    android:text="Rectangle"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText">
+                </TextView>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </GridLayout>
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/gridLayout1"
+        android:text="Logout"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+</RelativeLayout>

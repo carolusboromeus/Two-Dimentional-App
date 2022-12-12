@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">FireBase</string>
+    <string name="already_have_account_singup">Already have account? <b>SingUp</b></string>
+</resources>
